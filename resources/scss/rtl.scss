@@ -1,0 +1,370 @@
+html[lang="fa"] {
+    body {
+        @apply rtl font-farsi tracking-normal;
+
+        & * {
+            @apply tracking-normal;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-farsi;
+    }
+
+    & .art-app {
+        width: auto;
+
+        & .art-app-wrapper {
+            & .art-app-container {
+                & .art-content {
+                    padding-right: unset;
+                    padding-left: 80px;
+
+                    &.art-active {
+                        transform: translateX(-150px);
+                    }
+                }
+                & .art-menu-bar {
+                    left: -150px;
+                    right: unset;
+                    & .art-menu-bar-frame {
+                        & .art-current-page {
+                            @apply -right-16 text-sm;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                    & .art-scroll-frame {
+                        & .art-language-change {
+                            & li {
+                                @apply text-xs;
+                            }
+                        }
+                    }
+                    & nav {
+                        & .main-menu {
+                            & .menu-item {
+                                transform: translateX(-60px);
+                                & a {
+                                    @apply text-xs;
+                                }
+                                & .sub-menu {
+                                    & .menu-item {
+                                        & a {
+                                            @apply text-xs;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.art-active {
+                        transform: translateX(150px);
+                        & nav {
+                            & .menu-item {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .art-info-bar {
+        // right: -290px;
+        // left: unset;
+        & .art-hard-skills {
+            & .art-hard-skills-item {
+                & .art-line-progress {
+                    & .progressbar-text {
+                        @apply text-left;
+                    }
+                }
+            }
+        }
+
+        /* ----- knowledge ----- */
+        & .art-knowledge-list {
+            & li {
+                &:before {
+                    display: none;
+                    content: "";
+                }
+                &:after {
+                    font-family: "Font Awesome 6 Pro";
+                    font-weight: 900;
+                    content: "\f00c";
+                    font-size: 9px;
+                    color: $main-color;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .art-sm-text {
+        @apply text-xs;
+    }
+    .art-user-titles {
+        @apply leading-relaxed;
+    }
+
+    .art-btn {
+        @apply tracking-normal;
+
+        &.art-btn-md {
+            @apply text-sm;
+        }
+
+        &.art-btn-sm {
+            @apply text-xs;
+        }
+    }
+
+    .art-code {
+        @apply font-farsi rtl;
+    }
+
+    .art-price {
+        & .art-popular-price {
+            &:before {
+                @apply text-xs;
+            }
+        }
+    }
+
+    .art-testimonial {
+        & .testimonial-body {
+            @apply text-xs leading-loose;
+
+            & .art-testimonial-face {
+                left: 30px;
+                right: unset;
+            }
+        }
+        & .art-testimonial-footer {
+            & .art-star-rate {
+                @apply text-xs;
+            }
+        }
+    }
+
+    .art-timeline {
+        & .art-timeline-item {
+            & .art-card-header {
+                & .art-right-side {
+                    & .art-date {
+                        @apply text-xs;
+                    }
+                }
+            }
+        }
+        & .art-timeline-content {
+            & .art-card-header {
+                & .art-right-side {
+                    & .art-date {
+                        @apply text-xs;
+                    }
+                }
+            }
+        }
+    }
+
+    .art-card {
+        @apply text-sm leading-loose;
+    }
+
+    .art-table {
+        & ul {
+            & li {
+                @apply mb-2;
+                &:last-child {
+                    @apply mb-0;
+                }
+            }
+        }
+    }
+
+    .art-project-category {
+        @apply text-xs;
+    }
+
+    .art-link {
+        @apply text-xs mr-0 ml-4;
+
+        &.art-w-chevron {
+            &:after {
+                content: "\f053";
+                transform: translateX(-5px);
+            }
+            &:hover {
+                &:after {
+                    transform: translateX(-10px);
+                }
+            }
+        }
+
+        & i {
+            @apply ml-0 mr-1;
+        }
+    }
+
+    .art-info-bar {
+        & .art-header {
+            & .art-avatar {
+                & .art-lamp-light {
+                    &:before {
+                        @apply left-px;
+                        right: unset;
+                    }
+                    & .art-available-lamp {
+                        left: 5px;
+                        right: unset;
+
+                        &:before {
+                            @apply -left-5;
+                            right: unset;
+                        }
+                        &:after {
+                            @apply -left-8 text-right text-xs;
+                            content: "آماده انجام پروژه شما هستم";
+                        }
+                    }
+                    & .art-not-available {
+                        & .art-available-lamp {
+                            &:after {
+                                content: "مشغول انجام پروژه هستم";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .art-form-field input,
+    & .art-form-field textarea {
+        padding-right: 65px;
+        padding-left: 15px;
+    }
+    & .art-form-field textarea {
+        padding-right: 15px;
+        border-left: unset;
+        border-right: solid 50px $info-bar-1-color;
+
+        &.art-active {
+            border-color: $main-color;
+        }
+
+        &:focus {
+            border-color: $main-color;
+        }
+    }
+    & .art-contact-form label {
+        left: unset;
+        right: 0;
+    }
+
+    .art-el-suptitle {
+        @apply text-xs;
+    }
+
+    .art-card-header {
+        & h5 {
+            @apply text-base;
+        }
+    }
+
+    .art-el-suptitle {
+        @apply not-italic text-xs;
+    }
+
+    .art-recomendation-popup,
+    .art-popup {
+        direction: rtl;
+    }
+
+    .art-skills-icons {
+        @apply rtl;
+
+        & .icon {
+            @apply mr-0 ml-3;
+        }
+    }
+
+    & .art-testimonial-footer {
+        @apply flex-row-reverse;
+    }
+
+    .line-progress > svg {
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    & .art-app-onepage {
+        & .art-app-wrapper {
+            & .art-app-container {
+                & .art-content {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    html[lang="fa"] {
+        & .art-app {
+            & .art-app-wrapper {
+                & .art-app-container {
+                    & .art-content {
+                        padding-left: 0;
+                        &.art-active {
+                            transform: none;
+                        }
+                    }
+                    & .art-menu-bar {
+                        left: -230px;
+                        right: unset;
+                        & .art-menu-bar-btn {
+                            transform: translateX(80px);
+                        }
+
+                        &.art-active {
+                            & .art-menu-bar-btn {
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                    & .art-info-bar {
+                        right: -290px;
+                        left: unset;
+
+                        &.art-active {
+                            transform: translateX(-290px);
+                        }
+
+                        & .art-info-bar-frame {
+                            & .art-info-bar-header {
+                                & .art-info-bar-btn {
+                                    transform: translateX(-70px);
+                                    margin-left: unset;
+                                    margin-right: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

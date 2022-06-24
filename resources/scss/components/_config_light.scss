@@ -1,0 +1,42 @@
+/* ----- fonts ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$pf: "Poppins", sans-serif;
+$sf: "Courier Prime", monospace;
+
+$main-color: theme('colors.light.main-color');
+
+$shadow-1: 0 3px 8px 0 theme('colors.light.shadow-light');
+$shadow-2: 0 1px 4px 0 theme('colors.light.shadow-lighter');
+
+$tr-lg: 0.55s ease-in-out;
+$tr-md: 0.4s ease-in-out;
+$tr-sm: 0.2s ease-in-out;
+
+$text-neon: 0 0 3px theme('colors.light.text-neon');
+
+$card-color: linear-gradient(159deg, theme('colors.light.card-color') 0%, theme('colors.light.card-color-secondary') 100%);
+$card-color-light: linear-gradient(159deg, theme('colors.light.card-color-light') 0%, theme('colors.light.card-color-secondary-light') 100%);
+$card-color-s-light: linear-gradient(159deg, theme('colors.light.card-color-lighter') 0%, theme('colors.light.card-color-secondary-lighter') 100%);
+
+$info-bar-1-color: theme('colors.light.info-bar-primary');
+$info-bar-1-color-light: theme('colors.light.info-bar-primary-light');
+$info-bar-1-color-s-light: theme('colors.light.info-bar-primary-lighter');
+
+$info-bar-2-color: linear-gradient(159deg, theme('colors.light.info-bar-secondary') 0%, theme('colors.light.info-bar-secondary') 100%);
+$info-bar-2-color-light: linear-gradient(159deg, theme('colors.light.info-bar-secondary-light') 0%, theme('colors.light.info-bar-secondary-light') 100%);
+$info-bar-2-color-s-light: linear-gradient(159deg, theme('colors.light.info-bar-secondary-lighter') 0%, theme('colors.light.info-bar-secondary-lighter') 100%);
+
+$content-color: theme('colors.light.content-color');
+$content-color-light: theme('colors.light.content-color-light');
+$content-color-s-light: theme('colors.light.content-color-lighter');
+
+$deep-color: theme('colors.light.deep-color');
+$deep-color-light: theme('colors.light.deep-color-light');
+$deep-color-s-light: theme('colors.light.deep-color-lighter');
+
+$text-color-1: theme('colors.light.text-color');
+$text-color-2: theme('colors.light.text-color-light');
+$text-color-3: theme('colors.light.text-color-lighter');
+
+$top-bg-gradient: linear-gradient(180deg, theme('colors.light.top-bg-gradient.lighter') 0%, theme('colors.light.top-bg-gradient.light') 70%, theme('colors.light.top-bg-gradient.dark') 80%, theme('colors.light.top-bg-gradient.darker') 100%)

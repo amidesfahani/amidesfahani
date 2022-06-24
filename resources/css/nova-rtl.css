@@ -1,0 +1,179 @@
+.rtl-font-face,
+.chartist-tooltip
+{
+    font-family: Peyda, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.rtl { direction: rtl !important; font-family: Peyda, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; }
+.ltr { direction: ltr !important; font-family: Nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.router-link-active {
+    font-weight: 400 !important;
+}
+
+.sidebar-label {
+    position: relative;
+    top: 2px;
+}
+
+/* .card .flex.items-center.ml-auto.px-3 {
+    margin-right: 0 !important;
+}
+
+.relationship-tabs-panel .tab-content > div > .relative > .flex {
+    left: 0;
+    right: auto !important;
+}
+.relationship-tabs-panel .tab-content > div > .relative > .flex > .w-full {
+    margin-left: 0 !important;
+    margin-right: 1.5rem;
+} */
+
+.text-grey {
+    color: #666666 !important;
+}
+.text-grey-black {
+    color: #333333 !important;
+}
+
+.form-select {
+    background-position: center left .75rem;
+}
+.form-select .search-input-trigger {
+    background-image: none;
+}
+
+.vc-sketch {
+    direction: ltr !important;
+    right: 0;
+}
+.vc-sketch *,
+.vc-sketch input {
+    direction: ltr !important;
+}
+
+.is-admin {
+    color: red;
+}
+.is-staff {
+    color: dodgerblue;
+}
+
+.chartist-tooltip {
+    font-size: 14px;
+}
+.ct-chart {
+    /* right: 0 !important; */
+    left: 0 !important;
+}
+.card.card-panel .overflow-hidden.overflow-y-auto.max-h-90px {
+    direction: ltr !important;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.relationship-tabs-panel .tab-content>div>.relative>.flex {
+    position: relative;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.form-select {
+    padding-left: 1.75rem;
+}
+
+.select-box {
+    background-position: center left .75rem !important;
+}
+.select-box-sm {
+    background-position: center left .55rem !important;
+}
+
+div[id].relative.flex.bg-white.mb-4.pb-1 {
+    flex-direction: row-reverse;
+}
+
+div[dusk="product-variants-search-input"] button[type="button"].absolute.inline-block {
+    right: auto !important;
+    left: 4px !important;
+}
+div[dusk="product-variants-search-input"] .flex.items-center.form-control.form-input.form-input-bordered.pr-6 {
+    padding-right: .5rem !important;
+}
+div[dusk="products-search-input"] button.absolute.inline-block {
+    left: 4px !important;
+    right: auto !important;
+}
+
+.multiselect__content,
+.multiselect__option {
+    direction: rtl;
+    text-align: right;
+}
+
+.vpd-time .vpd-counter {
+    direction: ltr !important;
+}
+.vpd-month-label {
+    width: 120px !important;
+}
+.vpd-next, .vpd-prev, .vpd-time .vpd-down-arrow-btn, .vpd-time .vpd-up-arrow-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.breadcrumbs .breadcrumbs__item a::after, .breadcrumbs .breadcrumbs__item span::after {
+    margin-right: 8px;
+}
+.breadcrumbs .breadcrumbs__item a, .breadcrumbs .breadcrumbs__item span {
+    margin-right: 0;
+    margin-left: 12px;
+}
+.breadcrumbs .breadcrumbs__item:first-of-type a {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+/* Vue Multi Select */
+.multiselect__option::after {
+    left: 0 !important;
+    padding-right: 20px !important;
+    padding-left: 12px !important;
+    right: unset !important;
+}
+/* .multiselect__select {
+    height: 36px !important;
+    right: unset !important;
+    left: 1px !important;
+	background: unset !important;
+	position: relative;
+}
+.multiselect__select::after {
+	position:relative;
+	left:0;
+	top:75%;
+	color:#999;
+	margin-top:4px;
+	border-style:solid;
+	border-width:5px 5px 0;
+	border-color:#999 transparent transparent;
+	content:"";
+} */
+.multiselect {
+    text-align: right !important;
+    direction: rtl !important;
+}
+.multiselect__tags {
+    padding: 8px 10px 0 40px !important;
+}
+
+div[dusk$="-search-input"] button.absolute.inline-block {
+	left: 4px;
+	right: auto !important;
+}
+
+div[dusk$="-search-input"] div.form-input div {
+	padding-right: 8px;
+}
