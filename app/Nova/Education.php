@@ -90,8 +90,8 @@ class Education extends Resource
                 ->store(new OptimizeImages())
             ,
             Textarea::make(__('Description'), 'description'),
-            Date::make(__('Start'), 'start_date')->firstDayOfWeek(1)->rules(['nullable', 'date'])->nullable(),
-            Date::make(__('End'), 'end_date')->firstDayOfWeek(1)->rules(['nullable', 'date', 'after_or_equal:start_date'])->nullable(),
+            Date::make(__('Start'), 'start_date')->rules(['nullable', 'date'])->nullable(),
+            Date::make(__('End'), 'end_date')->rules(['nullable', 'date', 'after_or_equal:start_date'])->nullable(),
 
             (new Panel(__('Farsi'), [
                 Text::make(__('Title'), 'title_fa')->rtl()->hideFromIndex(),

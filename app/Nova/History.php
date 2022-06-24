@@ -71,8 +71,8 @@ class History extends Resource
                 ->store(new OptimizeImages())
             ,
             Trix::make(__('Description'), 'description'),
-            Date::make(__('Start'), 'start_date')->firstDayOfWeek(1)->hideFromIndex(),
-            Date::make(__('End'), 'end_date')->firstDayOfWeek(1)->hideFromIndex(),
+            Date::make(__('Start'), 'start_date')->hideFromIndex(),
+            Date::make(__('End'), 'end_date')->hideFromIndex(),
             Text::make(__('Link'), 'website')->hideFromIndex()->ltr(),
 
             (new Panel(__('Farsi'), [

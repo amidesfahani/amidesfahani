@@ -74,8 +74,8 @@ class Project extends Resource
             ,
             Textarea::make(__('About'), 'about'),
             Trix::make(__('Description'), 'description'),
-            Date::make(__('Start'), 'order_date')->firstDayOfWeek(1)->rules(['nullable', 'date'])->nullable()->hideFromIndex(),
-            Date::make(__('End'), 'final_date')->firstDayOfWeek(1)->rules(['nullable', 'date', 'after_or_equal:order_date'])->nullable()->hideFromIndex(),
+            Date::make(__('Start'), 'order_date')->rules(['nullable', 'date'])->nullable()->hideFromIndex(),
+            Date::make(__('End'), 'final_date')->rules(['nullable', 'date', 'after_or_equal:order_date'])->nullable()->hideFromIndex(),
             Text::make(__('Link'), 'link')->nullable()->hideFromIndex(),
 
             (new Panel(__('Farsi'), [
