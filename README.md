@@ -2,7 +2,7 @@
 
 🖖
 
-I’m a developer living in Iran. I build tools that help people have a better life, in their personal and/or professional lives. I work mainly on two projects to achieve this goal.
+I’m a developer living in Iran. I build tools that help people have a better life, in their personal and/or professional lives.
 
 ### Where to find me
 
