@@ -1,9 +1,10 @@
 /node_modules
 /public/hot
 /public/storage
+/public/assets/dummy
+/public/.htaccess
 /storage/*.key
 /storage/app/public
-/public/assets/dummy
 /resources/assets
 /nova/node_modules
 /nova/vendor
